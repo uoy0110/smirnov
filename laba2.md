@@ -1,4 +1,5 @@
 #Задание 1
+```
 def convert_types(data):
     result = []
     for item in data:
@@ -15,18 +16,20 @@ def convert_types(data):
         else:
             result.append(str(item))
     return result
-
+```
 #Задание 2
+```
 def swap_values(a, b):
     a, b = b, a
     return a, b
-
+```
 #Задание 3
+```
 def bool_transform(value):
     if value:
         return True
     return False
-
+```
 #Задание 4
 def compound_operations(a, b):
     results = []
