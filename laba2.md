@@ -31,9 +31,9 @@ def bool_transform(value):
     return False
 ```
 #Задание 4
+```
 def compound_operations(a, b):
     results = []
-
     val = a
     val += b
     results.append(val)
@@ -55,22 +55,25 @@ def compound_operations(a, b):
     val = a
     val **= b
     results.append(val)
-
     return results
+```
 
 #Задание 5
+```
 def check_type(value, expected_type):
     return type(value).__name__ == expected_type
-
+```
 #Задание 6
+```
 def logical_and(a, b, c):
     if a:
         if b:
             if c:
                 return True
     return False
-
+```
 #Задание 7
+```
 def logical_or(a, b, c):
     if a:
         return True
@@ -79,33 +82,38 @@ def logical_or(a, b, c):
     if c:
         return True
     return False
-
+```
 #Задание 8
+```
 def is_between(value, low, high):
     if value >= low and value <= high:
         return True
     else:
         return False
-
+```
 #Задание 9
+```
 def print_even_numbers(n):
     for i in range(2, n + 1, 2):
         print(i)
-
+```
 #Задание 10
+```
 def countdown_while(n):
     while n >= 1:
         print(n)
         n -= 1
-
+```
 #Задание 11
+```
 def skip_multiples(n, multiple):
     for i in range(1, n + 1):
         if i % multiple == 0:
             continue
         print(i)
-
+```
 #Задание 12
+```
 def if_elif_else_chain(x):
     if x > 0:
         return "positive"
@@ -113,14 +121,16 @@ def if_elif_else_chain(x):
         return "negative"
     else:
         return "zero"
-
+```
 #Задание 13
+```
 def abs_value(x):
     if x < 0:
         return -x
     return x
-
+```
 #Задание 14
+```
 def binary_representation(n):
     if n == 0:
         return "0"
@@ -130,16 +140,18 @@ def binary_representation(n):
         res = str(num % 2) + res
         num //= 2
     return res
-
+```
 #Задание 15
+```
 def custom_round(number, ndigits):
     multiplier = 10 ** ndigits
     if number >= 0:
         return int(number * multiplier + 0.5) / multiplier
     else:
         return int(number * multiplier - 0.5) / multiplier
-
+```
 #Задание 16
+```
 def find_max_min(numbers):
     if not numbers:
         return None
@@ -151,22 +163,25 @@ def find_max_min(numbers):
         if num < min_val:
             min_val = num
     return max_val, min_val
-
+```
 #Задание 17
+```
 def all_true(iterable):
     for item in iterable:
         if not item:
             return False
     return True
-
+```
 #Задание 18
+```
 def any_true(iterable):
     for item in iterable:
         if item:
             return True
     return False
-
+```
 #Задание 19
+```
 def custom_enumerate(sequence, start=0):
     result = []
     index = start
@@ -174,38 +189,43 @@ def custom_enumerate(sequence, start=0):
         result.append((index, item))
         index += 1
     return result
-
+```
 #Задание 20
+```
 def custom_filter(func, iterable):
     result = []
     for item in iterable:
         if func(item):
             result.append(item)
     return result
-
+```
 #Задание 21
+```
 def custom_map(func, iterable):
     result = []
     for item in iterable:
         result.append(func(item))
     return result
-
+```
 #Задание 22
+```
 def custom_zip(list1, list2):
     result = []
     length = len(list1) if len(list1) < len(list2) else len(list2)
     for i in range(length):
         result.append((list1[i], list2[i]))
     return result
-
+```
 #Задание 23
+```
 def custom_reversed(sequence):
     result = []
     for i in range(len(sequence) - 1, -1, -1):
         result.append(sequence[i])
     return result
-
+```
 #Задание 24
+```
 def custom_sorted(iterable, reverse=False):
     arr = list(iterable)
     n = len(arr)
@@ -218,8 +238,9 @@ def custom_sorted(iterable, reverse=False):
                 if arr[j] > arr[j + 1]:
                     arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
-
+```
 #Задание 25
+```
 def sum_digits(n):
     n = abs(n)
     total = 0
@@ -227,8 +248,9 @@ def sum_digits(n):
         total += n % 10
         n //= 10
     return total
-
+```
 #Задание 26
+```
 def count_vowels(text):
     vowels = "aeiouAEIOU"
     count = 0
@@ -236,8 +258,9 @@ def count_vowels(text):
         if char in vowels:
             count += 1
     return count
-
+```
 #Задание 27
+```
 def power(base, exp):
     if exp < 0:
         return 1 / power(base, -exp)
@@ -245,8 +268,9 @@ def power(base, exp):
     for _ in range(exp):
         result *= base
     return result
-
+```
 #Задание 28
+```
 def is_prime(n):
     if n <= 1:
         return False
@@ -254,8 +278,9 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
-
+```
 #Задание 29
+```
 def factorial(n):
     if n < 0:
         return None
@@ -263,8 +288,9 @@ def factorial(n):
     for i in range(1, n + 1):
         result *= i
     return result
-
+```
 #Задание 30
+```
 def fibonacci(n):
     if n <= 0:
         return 0
@@ -274,3 +300,4 @@ def fibonacci(n):
     for _ in range(2, n + 1):
         a, b = b, a + b
     return b
+```
